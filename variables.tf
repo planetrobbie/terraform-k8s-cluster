@@ -11,5 +11,6 @@ variable "project_name" {
 }
 
 variable "account_file_path" {
-  description = "~/.config/gcloud/terraform-admin.json"
+  description = "credential file when running TF OSS"
+  default = "~/.config/gcloud/terraform-admin.json"
 }
