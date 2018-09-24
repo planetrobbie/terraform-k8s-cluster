@@ -1,11 +1,11 @@
 provider "google" {
   region      = "${var.region}"
   project     = "${var.project_name}"
-  credentials = "${file(var.account_file_path)}"
+#  credentials = "${file(var.account_file_path)}"
 }
 
 resource "google_container_cluster" "primary" {
-  name               = "bookshelf"
+  name               = "k8s-cluster"
   zone               = "europe-west1-c"
   initial_node_count = 2
 
