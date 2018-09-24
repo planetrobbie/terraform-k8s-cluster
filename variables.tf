@@ -7,7 +7,8 @@ variable "region_zone" {
 }
 
 variable "project_name" {
-  description = "sebbraun-yet"
+  description = "project where to deploy k8s cluster"
+  default = "sebastien-demo"
 }
 
 variable "account_file_path" {
