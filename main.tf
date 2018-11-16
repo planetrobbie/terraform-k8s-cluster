@@ -7,7 +7,7 @@ provider "google" {
 resource "google_container_cluster" "primary" {
   name               = "k8s-cluster"
   zone               = "europe-west1-c"
-  initial_node_count = 2
+  initial_node_count = 3
 
   node_config {
     oauth_scopes = [
