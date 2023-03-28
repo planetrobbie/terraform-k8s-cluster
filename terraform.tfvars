@@ -1,3 +1,3 @@
-region = "europe-west1"
-region_zone = "europe-west1-c"
-project_name = "sebastien-demo"
+#region = "europe-west1"
+#region_zone = "europe-west1-c"
+#project_name = "sebastien-demo"
