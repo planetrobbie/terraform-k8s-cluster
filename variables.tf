@@ -18,7 +18,7 @@ variable "cluster_name" {
 
 variable "initial_node_count" {
   description = "How many nodes to start with"
-  default = 1
+  default = 3
 }
 
 variable "account_file_path" {
