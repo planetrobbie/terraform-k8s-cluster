@@ -6,7 +6,7 @@ provider "google" {
 
 resource "google_container_cluster" "primary" {
   name               = var.cluster_name
-  zone               = var.region_zone
+  location           = var.region
   initial_node_count = var.initial_node_count
 
   node_config {
