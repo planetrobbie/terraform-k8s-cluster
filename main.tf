@@ -1,13 +1,13 @@
 provider "google" {
-  region      = "${var.region}"
-  project     = "${var.project_name}"
+  region      = var.region
+  project     = var.project_name
 #  credentials = "${file(var.account_file_path)}"
 }
 
 resource "google_container_cluster" "primary" {
-  name               = "k8s-cluster"
-  zone               = "europe-west1-c"
-  initial_node_count = 3
+  name               = var.cluster_name
+  zone               = var.region_zone
+  initial_node_count = var.initial_node_count
 
   node_config {
     oauth_scopes = [
